@@ -1,0 +1,31 @@
+.app {
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.thumbnail {
+	position: relative;
+	min-height: 135px;
+}
+.thumbnail h3 {
+	font-size: 1em;
+}
+.thumbnail img {
+	float: right;
+	margin: 10px;
+}
+.thumbnail .destroy {
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+	background: url( ../images/delete-icon.png ) no-repeat;
+	text-indent: -999em;
+}
