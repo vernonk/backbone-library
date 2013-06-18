@@ -8,6 +8,7 @@ function ( Backbone ) {
 
 		routes: {
 			"": "main",
+			// "add(/)": "addBook",
 			":type(/)": "setFilter",
 			"*path": "catchAll"
 		},
@@ -20,6 +21,10 @@ function ( Backbone ) {
 		setFilter: function ( param ) {
 			window.library.common.bookFilter = param.trim() || "";
 			window.library.collections.books.trigger( "filter" );
+		},
+
+		addBook: function () {
+			window.library.collections.books.trigger( "newbook" );
 		},
 
 		catchAll: function ( path ) {

@@ -1,10 +1,10 @@
 define( [
 	"collections/books",
 	"views/books",
-	"views/filter",
+	"views/app",
 	"data"
 ],
-function ( Books, FilterView, BooksView, data ) {
+function ( Books, BooksView, AppView, data ) {
 
 	var App = function () {
 		
@@ -14,7 +14,7 @@ function ( Books, FilterView, BooksView, data ) {
 			collection: this.collections.books
 		});
 
-		this.views.filter = new FilterView({
+		this.views.app = new AppView({
 			collection: this.collections.books
 		});
 

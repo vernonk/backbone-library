@@ -29,3 +29,7 @@
 	background: url( ../images/delete-icon.png ) no-repeat;
 	text-indent: -999em;
 }
+
+.modal-open .modal,.btn:focus{
+    outline:none!important
+}

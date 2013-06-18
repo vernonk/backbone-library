@@ -21,15 +21,15 @@ define( [], function() {
 			"completed": false
 		},
 		{
-			"title": "Sinatra: Up and Running",
-			"author": "Alan Harris, Konstantin Haase",
-			"img": "sinatra.gif",
+			"title": "JavaScript Web Applications",
+			"author": "Alex MacCaw",
+			"img": "js-web-apps.gif",
 			"completed": false
 		},
 		{
-			"title": "The Ruby Programming Language",
-			"author": "David Flanagan, Yukihiro Matsumoto",
-			"img": "ruby.gif",
+			"title": "Learning JavaScript Design Patterns",
+			"author": "Addy Osmani",
+			"img": "js-patterns.gif",
 			"completed": false
 		},
 		{
