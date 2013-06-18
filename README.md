@@ -1,4 +1,4 @@
-backbone-library
+Backbone Library App
 ================
 
-Simple app built together at CharlotteJS meetup on June 20, 2013
+This is a simple app that we'll build together at CharlotteJS meetup on June 20, 2013.
