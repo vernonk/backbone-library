@@ -6,15 +6,7 @@ define([
 
 function ( Backbone, Store, Book ) {
 
-	var Books = Backbone.Collection.extend({
-
-		model: Book,
-
-		localStorage: new Store( "charlottejs" ),
-
-		comparator: "completed"
-
-	});
+	var Books;
 
 	return Books;
 

@@ -30,8 +30,8 @@ require( [
 	"router"
 ],
 function( App, Router ) {
-	window.library = new App();
-	window.library.router = new Router();
-	Backbone.history.start();
+
+
+	
 });
 

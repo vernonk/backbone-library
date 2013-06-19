@@ -7,20 +7,7 @@ function ( Backbone ) {
 
 	var App = Backbone.View.extend({
 
-		el: ".app",
 
-		events: {
-			"click a": "filterBooks",
-			"click li.add a": "showForm",
-			submit: "createBook"
-		},
-
-		initialize: function () {
-			this.$filterbar = this.$el.find( ".nav-pills" );
-			this.$addForm = this.$el.find( ".addForm" );
-
-			this.listenTo( this.collection, "filter", this.filterBooks );
-		},
 
 		render: function (e) {
 			// Let's make sure the active filter matches state
@@ -37,23 +24,12 @@ function ( Backbone ) {
 							.addClass( "active" );
 		},
 
-		filterBooks: function () {
-			this.collection.forEach( function( book ) {
-				book.trigger( "visible" );
-			}, this );
-			this.render();
-		},
-
+		// just creating our modal for the add form
 		showForm: function () {
 			this.$addForm.modal();
 		},
 
-		createBook: function ( e ) {
-			e.preventDefault();
-			this.collection.create( this.newAttrs() );
-			this.$addForm.modal( "hide" );
-		},
-
+		// getting the attrs from the form to use for our new book
 		newAttrs: function() {
 			var data = {}, $addForm = this.$addForm;
 			data.title = _.escape( $addForm.find( "[name='title']" ).val() ) || null;
@@ -62,7 +38,6 @@ function ( Backbone ) {
 			data.completed = $addForm.find( "[name='completed']" ).is( ":checked" );
 			return data;
 		}
-
 
 	});
 

@@ -8,17 +8,6 @@ function ( Books, BooksView, AppView, data ) {
 
 	var App = function () {
 		
-		this.collections.books = new Books();
-
-		this.views.books = new BooksView({
-			collection: this.collections.books
-		});
-
-		this.views.app = new AppView({
-			collection: this.collections.books
-		});
-
-		this.common.bookFilter = "";
 		
 		// Populating our storage with pseduo data
 		if( !localStorage.getItem( "charlottejs" ) ) {
