@@ -1,8 +1,8 @@
 Backbone Library App
 ================
-
 This is a simple app that we'll build together at CharlotteJS meetup on June 20, 2013. The library app uses localStorage for our store.
 
+Bit.ly URL to this repo: http://bit.ly/cjs-backbone
 
 ## Walkthrough Steps
 
