@@ -21,7 +21,7 @@ function ( Books, BooksView, AppView, data ) {
 		this.common.bookFilter = "";
 		
 		// Populating our storage with pseduo data
-		if( !localStorage.getItem( "charlottejs" ) ) {
+		if( !localStorage.getItem( "youridentifier" ) ) {
 			_.forEach( data.books, function ( book ) {
 				this.collections.books.create( book );
 			}, this);
