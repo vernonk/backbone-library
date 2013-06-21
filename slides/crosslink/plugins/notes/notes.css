@@ -1,0 +1,17 @@
+aside.notes {
+	display: none;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 44px;
+    padding: 15px 15px 15px 37px;
+    margin-left: -39px;
+}
+
+.page-no.notes {
+	color: PapayaWhip;
+}
+
+aside.notes ul {
+	color: black !important;
+}

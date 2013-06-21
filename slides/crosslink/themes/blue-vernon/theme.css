@@ -1,0 +1,84 @@
+@import url("./css/screen.css");
+@import url("./css/ui-lightness/jquery-ui-1.8.16.custom.css");
+@import url("./css/mediaelementplayer.css");
+
+#slide-0 {
+	background-color: rgb(24,37,72);
+	background-image: url( ./images/backbone-logo-bg.png ), -webkit-gradient(radial, 50% 50%, 600, 50% 20%, 1, from(rgba(40,58,113,0)), to(rgba(40,58,113,0.8)));
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+#slide-0 h2 {
+	color: #fff;
+}
+
+blockquote {
+	font-size: 3.5em;
+	line-height: 1.5;
+	font-family: Georgia, sans-serif;
+	font-weight: normal;
+	font-style: italic;
+	color: #ddd;
+	margin: 35px;
+}
+
+h3 {
+	font-size: 2.2em;
+	color: #ddd;
+}
+
+.slide .content code {
+	font-size: 1.2em;
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+	overflow: hidden;
+	padding: 0.6em 0;
+}
+
+footer p {
+	text-transform: uppercase;
+	font-family: OstrichSansBlack, "Helvetica Neue", Arial, sans-serif
+	color: white;
+	font-size: 1.5em;
+	/*letter-spacing: 0;*/
+	width: 48.5%;
+	margin: 0;
+	margin-left: 1%;
+	padding: 0;
+	display: inline-block;
+	*display: inline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#crosslink > footer p {
+	width: auto;
+	margin-left: 1em;
+}
+
+footer p.right-footer {
+	text-align: right;
+}
+
+footer p span.page-no {
+	color: #888;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+li ul {
+	padding-top: 5px;
+	padding-left: 1.2em !important;
+}
+
+img.breathe {
+	display: inline;
+}
+
